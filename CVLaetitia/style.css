@@ -39,11 +39,6 @@ h2:hover {
 }
 
 
-
-main {
-max-with:960px;
-
-}
 #menu  {
 list-style: none;
 float:left;
@@ -81,7 +76,7 @@ text-align: center;
 .coordonées{
     text-align: center;
     line-height: 40px;
-    margin-left: -37pxpx;
+    margin-left: -37px;
 }
 
 .icones{
@@ -102,7 +97,7 @@ text-align: center;
   margin-top: -100px;
 }
 
-
+ 
 
 
 .formations{
