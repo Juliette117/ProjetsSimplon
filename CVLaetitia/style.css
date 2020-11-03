@@ -38,6 +38,9 @@ h2:hover {
     
 }
 
+a{
+    color: #ec2c7c;
+}
 
 #menu  {
 list-style: none;
@@ -80,7 +83,6 @@ text-align: center;
 }
 
 .icones{
-    text-decoration: none;
     color:#D25782;
     height: 170px;
     margin-top: 70px;
