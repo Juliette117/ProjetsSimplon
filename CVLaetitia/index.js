@@ -39,3 +39,27 @@ ScrollReveal().reveal('.compétences', { delay: 1200 });
   
 //   const darkmode = new Darkmode(options);
 //   darkmode.showWidget();
+
+
+
+
+
+
+const button = document.querySelector(".button")
+
+button.addEventListener("click", mudaCor)
+                        
+function mudaCor() {
+  const body = document.querySelector("body");
+  
+  button.classList.toggle("dark")
+  body.classList.toggle("dark")
+  
+  if (document.querySelector(".button").textContent == "Light Mode") {
+    document.querySelector(".button").textContent = "Dark Mode"
+  }
+  else {
+    document.querySelector(".button").textContent = "Light Mode"
+  }
+}
+
