@@ -1,0 +1,39 @@
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+ }
+
+
+
+
+
+    @media screen and (max-width: 600px){
+
+        .container{
+            display: block;
+            width: 100%;   
+            margin: 0 0 10px 0;
+        }
+        
+        .card{
+            display: block;
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+        
+        .carousel-item {
+            display: none;
+
+        }
+    
+        }
+    
+    
+    
+      
+    
+
+    
