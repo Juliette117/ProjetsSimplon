@@ -9,85 +9,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-
-
-
-    <header>
-
-    </header>
-
-<nav>
-
-</nav>
-
-<section>
-
+    
     <div class="container">
   
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="./IMG/Lynx.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Le lynx</h5>
-          <p class="card-text">Les lynx sont des félins de la sous-famille des félinés. Parmi les félins, les lynx sont aisément reconnaissables à leur face ornée de favoris, à leurs oreilles triangulaires surmontées d'une touffe de poils noirs, et à leur corps doté d'une courte queue et de longues pattes.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./IMG/Lynx.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Le lynx</h5>
+              <p class="card-text">Les lynx sont des félins de la sous-famille des félinés. Parmi les félins, les lynx sont aisément reconnaissables à leur face ornée de favoris, à leurs oreilles triangulaires surmontées d'une touffe de poils noirs, et à leur corps doté d'une courte queue et de longues pattes.</p>
+              <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+          </div>
+    
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./IMG/Caracl.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Le caracal</h5>
+              <p class="card-text">Le Caracal est un félin largement répandu en Afrique et en Asie depuis le Moyen-Orient jusqu'au sous-continent indien. En 2008, le caracal était classé en catégorie préoccupation mineure sur la liste rouge de l'UICN en raison de sa présence relativement commune notamment en Afrique australe et en Afrique de l'Est.</p>
+              <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+          </div>
+    
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./IMG/Cheetah.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Le guépard</h5>
+              <p class="card-text">Le guépard (Acinonyx jubatus) est un grand mammifère carnassier de la famille des félidés vivant en Afrique et en Asie de l'Ouest. Le guépard a une allure svelte et fine, avec de longues pattes élancées, et une face au museau court marquée par deux traces noires partant des yeux.</p>
+              <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+          </div>
+          </div>
 
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="./IMG/Caracl.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Le caracal</h5>
-          <p class="card-text">Le Caracal est un félin largement répandu en Afrique et en Asie depuis le Moyen-Orient jusqu'au sous-continent indien. En 2008, le caracal était classé en catégorie préoccupation mineure sur la liste rouge de l'UICN en raison de sa présence relativement commune notamment en Afrique australe et en Afrique de l'Est.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="./IMG/Cheetah.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Le guépard</h5>
-          <p class="card-text">Le guépard (Acinonyx jubatus) est un grand mammifère carnassier de la famille des félidés vivant en Afrique et en Asie de l'Ouest. Le guépard a une allure svelte et fine, avec de longues pattes élancées, et une face au museau court marquée par deux traces noires partant des yeux.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      </div>
-
-      
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
     Launch demo modal
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -97,7 +82,6 @@
     </div>
   </div>
 
-
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -106,21 +90,18 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active" align="center">
+        <img src="./IMG/Cheetah.jpg" class="d-block" alt="...">
+      </div>
+      <div class="carousel-item" align="center">
         <img src="./IMG/Lynx.jpg" class="d-block" alt="...">
       </div>
       <div class="carousel-item" align="center">
         <img src="./IMG/Caracl.jpg" class="d-block" alt="...">
       </div>
       <div class="carousel-item" align="center">
-        <img src="./IMG/Cheetah.jpg" class="d-block" alt="...">
+        <img src="./IMG/Lynx2.jpg" class="d-block" alt="...">
       </div>
     </div>
-    
-    <div class="carousel-item" align="center">
-      <img src="./IMG/Lynx2.png" class="d-block" alt="...">
-    </div>
-  </div>
-
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -130,20 +111,22 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  
 
-</section>
 
-<aside>
 
-</aside>
 
-<footer>
 
-</footer>
+
+
+
+
+
+
+
+
+    
+</body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-</body>
 </html>
