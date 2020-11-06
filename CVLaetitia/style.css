@@ -1,103 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
 
 body {
-    background-color: white;
-    color: black;
-    margin-top: -40px;
-    margin-left: 0px;
-    font-family: 'Alice', serif;
-    
+  background-color: white;
+  color: black;
+  margin-top: -40px;
+  margin-left: 0px;
+  font-family: "Alice", serif;
 }
 
-.dark{
-    background-color: black;
-    color: grey;
-    
-  }
-
-
-
-h1{	
-    text-align: center;
-    margin-left: -40px;
+.dark {
+  background-color: black;
+  color: #EEEEEE;
 }
 
-h2{ 
-    font-size: 27px;
-    text-align: center;
-    margin-top: 130px;
-    overflow: hidden;
+.dark #menu {
+  background-color: #292929;
   
 }
 
-h3{
-    font-size: 20px;
-    margin-top: 42px;
+.dark #contenu {
+  background-color: #292929;
 }
 
 
 
+h1 {
+  text-align: center;
+  margin-left: -40px;
+}
+
+h2 {
+  font-size: 27px;
+  text-align: center;
+  margin-top: 130px;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 42px;
+}
 
 h2:hover {
-  color: #ec2c7c;  
-  transition:all 2s;
-  
+  color: #ec2c7c;
+  transition: all 2s;
 }
 
-a{
-    color: #ec2c7c;
+a {
+  color: #ec2c7c;
 }
 
-#menu  {
-list-style: none;
-float:left;
-padding-bottom: 640px;
-padding-left:50px;
-width:230px;
-font-size: 17px;
-background-color:#D9E2E9;
-margin-top: -10px;
+ul{
+  list-style: none;
+  margin-left: -50px;
 
+}
+
+#menu {
+  list-style: none;
+  float: left;
+  padding-bottom: 640px;
+  padding-left: 50px;
+  width: 230px;
+  font-size: 17px;
+  background-color: #d9e2e9;
+  margin-top: -10px;
 }
 
 #contenu {
-padding-left: 70px;
-font-size: 22.7px;
-background-color: #F8E6F1;
-margin-left: 290px;
-padding-top: 1px;
-padding-bottom: 70px;
-margin-top: 50px;
-text-align: center;
-
+  padding-left: 70px;
+  font-size: 22.7px;
+  background-color: #f8e6f1;
+  margin-left: 290px;
+  padding-top: 1px;
+  padding-bottom: 70px;
+  margin-top: 50px;
+  text-align: center;
 }
 
-.imageprofil{
-    border-radius: 50%;
-    width: 170px;
-    margin-top: 70px;
-    margin-left: 7px;
-    animation-duration: 3s;
-    animation-name: slide;
-    
+.imageprofil {
+  border-radius: 50%;
+  width: 170px;
+  margin-top: 70px;
+  margin-left: 7px;
+  animation-duration: 3s;
+  animation-name: slide;
 }
 
-.coordonées{
-    text-align: center;
-    line-height: 40px;
-    margin-left: -37px;
+.coordonées {
+  text-align: center;
+  line-height: 40px;
+  margin-left: -30px;
 }
 
-.icones{
-    color:#D25782;
-    height: 170px;
-    margin-top: 70px;
-    font-size: 30px;
-    word-spacing: 10px;
-    margin-left: 10px;
+.icones {
+  color: #d25782;
+  height: 170px;
+  margin-top: 70px;
+  font-size: 30px;
+  word-spacing: 10px;
+  margin-left: 10px;
 }
 
-.langues{
+.langues {
   text-align: center;
   font-size: 17px;
   line-height: 30px;
@@ -105,121 +110,111 @@ text-align: center;
   margin-top: -100px;
 }
 
- 
-
-
-.formations{
-    text-align: justify;
-    line-height: 50px;
-    margin-left: 20px;
+.formations {
+  text-align: justify;
+  line-height: 50px;
+  margin-left: 20px;
 }
 
-.formations:hover{
-    color: #ec2c7c;  
-    transition:all 2s;
-
-
-}    
-    
-
-
-.experiences{
-    text-align: justify;
-    line-height: 50px;
-    margin-left: 20px;
+.formations:hover {
+  color: #ec2c7c;
+  transition: all 2s;
 }
 
-.experiences:hover{
-    color: #ec2c7c;  
-    transition:all 2s;
+.experiences {
+  text-align: justify;
+  line-height: 50px;
+  margin-left: 20px;
+}
 
-} 
+.experiences:hover {
+  color: #ec2c7c;
+  transition: all 2s;
+}
 
-  
-.compétences{
+.compétences {
+  text-align: center;
+  margin-left: 390px;
+  line-height: 50px;
+}
+
+.compétences:hover {
+  color: #ec2c7c;
+  transition: all 2s;
+}
+
+body {
+  background-color: white;
+}
+
+button {
+  position: absolute;
+  top: 1430px;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ec2c7c;
+  color: white;
+  border: 1px solid #7e3c5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7e3c5b;
+}
+
+.dark button {
+  background-color: white;
+  color: black;
+}
+
+.dark button:hover {
+  background-color: #b3cde0;
+}
+
+@media screen and (max-width: 640px) {
+  h1,
+  h2,
+  h3,
+  #contenu,
+  #menu,
+  .icones,
+  .formations,
+  .experiences {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .compétences {
+    display: block;
     text-align: center;
-    margin-left: 390px;
-    line-height: 50px;
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  button {
+    display: none;
+  }
 }
-
-.compétences:hover{
-    color: #ec2c7c;  
-    transition:all 2s;
-
-} 
-
-
-
-body{
-    background-color: white;
-  }
-  
-  button{
-    position: absolute;
-    top: 1430px;
-    right: 15px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #ec2c7c;
-    color: white;
-    border: 1px solid #7e3c5b;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  button:hover{
-    background-color:  #7e3c5b;
-  }
-  
-  
-  
-  .dark button{
-    background-color: white;
-    color: black;
-  }
-  
-  .dark button:hover{
-    background-color: #b3cde0;
-  }
-
-
-  @media screen and (max-width: 600px){
-
-   h1, h2, h3, #contenu, #menu{
-        display: block;
-        width: 100%;   
-        margin: 0 0 10px 0;
-    }
-
-    button{
-      display:none;
-    }
-    
-
-    
-
-
-    }
-
-
-  
 
 @keyframes slide {
-    from {
-      margin-top: 100%;
-      width: 100%; 
-    }
-  
-    to {
-      margin-bottom: 0%;
-      width: 50;
-    }
+  from {
+    margin-top: 100%;
+    width: 100%;
   }
 
-  /* @media (prefers-color-scheme: light){
+  to {
+    margin-bottom: 0%;
+    width: 50;
+  }
+}
+
+/* @media (prefers-color-scheme: light){
       body{
           background-color: white;
           color: #000000;
