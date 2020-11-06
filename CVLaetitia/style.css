@@ -56,6 +56,11 @@ ul{
 
 }
 
+table{
+  width: 100%;
+}
+
+
 #menu {
   list-style: none;
   float: left;
@@ -134,7 +139,6 @@ ul{
 
 .compétences {
   text-align: center;
-  margin-left: 390px;
   line-height: 50px;
 }
 
