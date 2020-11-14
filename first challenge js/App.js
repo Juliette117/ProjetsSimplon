@@ -152,3 +152,191 @@
 
 
 
+
+
+//----------------- Fonctions -------------------
+
+// const cl = console.log;
+
+
+
+// 11)
+// //Créez deux variables initialisées à 3 et 4.
+// //Créez une fonction qui retourne l'addition de ces deux valeurs.
+// const add = (num1, num2) => {
+//   //TODO
+//   };
+  
+// const add = (num1, num2) =>{
+//   return num1 + num2;
+// };
+// cl( add(3, 4));
+// Résultat dans la console : 7
+
+
+
+// 12)
+//Créez une fonction qui prend en paramètre la valeur i. La fonction doit
+//retourner la valeur i (indice/index) au carré et l'afficher.
+
+// const square = (number) => {
+  //TODO
+// };
+
+// function square  (number)  {
+//   let carre = Math.pow(number,2)
+//   return carre;
+// };
+// cl(square(7));
+// // Résultat dans la console : 49
+
+
+  
+
+//13)
+// En utilisant la methode 'map', mettre la chaine de
+// caractère en majuscule.
+// const beatles = ["paul", "john", "ringo", "george"];
+// const soustrait = (tableau) => {
+//TODO
+// };
+
+// const beatles = ["paul", "john", "ringo", "georges"];
+// const map1 = beatles.map(function(maj){
+//     return maj.toUpperCase();
+// });
+// cl(map1);
+
+
+
+
+//14)
+//Créez un tableau nommé tab dont le premier
+//élément est -2, le deuxième 3 et le troisième 4
+//Créez une fonction qui soustrait chaque éléments du tableau au suivant.
+// const tab = [-2 ,3 ,4 ];
+// const soustrait = (somme, currentValue) => 
+//   somme - currentValue;
+// cl(tab.reduce(soustrait));
+// Résultat : -9
+
+
+
+// 15) 
+// (vu en cours)
+// //Créez une fonction qui renvoie la somme de chaque éléments du
+// //tableau si celui-ci est supérieur à 0.
+// const array2 = [-2, 4, -5, 3, 6];
+// const addPositiveNumber = (tableau) => {
+//  //TODO
+// };
+
+// const array1 = [-2, 4, -5, 3, 6]; 
+// function sommeTab(array){
+//   //la variable résultat attendu
+//   let resultat = 0;
+//   //Parcours du tableau en paramètre, tant que j'ai des éléments à lire
+//   for(const element of array){
+//   //Je teste si l'élément est positif 
+//     if(element>0){
+//   //On stocke ce résultat
+//   //Et on additionne le nombre courant au résultat précédent    
+//       resultat = resultat+element;
+//     }
+//   }
+//   //On renvoit le résultat
+//   return resultat;
+// }
+//   cl(sommeTab(array1));
+//   // Résultat: 13
+
+
+
+// 16)
+// //Créez une fonction qui prend un parametre 'r' et qui
+// //renvoie le périmetre d'un cercle. (2*PI*Rayon)
+// const périmetreCercle = (r) => {
+//   //TODO
+// };
+
+// function perimetreCercle(r){
+// //Le périmetre sera égal à 2*PI*r
+// let perimetre = 2*Math.PI*r;
+// return perimetre;
+// }
+// let perimetresept = perimetreCercle(7);
+// console.log(perimetresept);
+
+
+
+
+// 17)
+//Créez une fonction qui met la premiere lettre d'un mot en majuscule.
+//Le reste du mot doit être en minuscule.
+//Le mot est "SimPloN"
+// const capitalize = (word) => {
+  //TODO
+// };
+
+// const capitalize = (word) => {  
+//  return word[0].toUpperCase() + word.substring(1).toLowerCase();  
+// }
+//   cl(capitalize("SimPloN"));
+
+
+
+
+//18) 
+//Odd or Even
+//Créez une fonction qui prend un nombre en parametre et qui renvoie :
+//paire si le nombre est pair
+//impaire si le nombre est impair
+//Tips : jetez un coup d'oeil à l'opérateur '%' dans la doc.
+
+// function pairImpair(n){ 
+//   if(n%2 == 0){
+//     return (" " + "pair");
+//   }
+//   else{
+//     return ( " " + "impair");
+//   }
+// }
+// cl(pairImpair(7));
+
+
+
+
+//19)
+//Mot inversé
+//créez une fonction qui prend en paramètre une chaine de caractère.
+//Cette fonction renvoie la chaine de caractère inversée.
+//ex: reverseWord('simplon') ==> 'nolpmis'
+// //Aide : join(), split(), reverse()
+// const reverseWord = (word) => {
+//   //TODO
+// };
+
+// const reverseWord = (word) => {
+//   const split = word.split(''); 
+//   const reverse = split.reverse();
+//   const resultat = reverse.join('');
+//   return resultat;
+// }
+
+// cl(reverseWord("simplon"));
+
+
+
+
+//20)
+//créez une fonction qui renvoie la somme de tableau
+// const nombres = ["3", "5", "6", "2"];
+
+// const nombres = ["3", "5", "6", "2"];
+// const StringtoNumber = nombres.map((i) => Number(i));
+// cl(StringtoNumber);
+// const reducer = (accumulator, currentValue) => accumulator + currentValue;
+// cl(StringtoNumber.reduce(reducer));
+// // Résultat dans la console : 16
+
+
