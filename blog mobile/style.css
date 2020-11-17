@@ -14,7 +14,7 @@ h1 {
   display: flex;
   color: rgb(63, 63, 114);
   font-size: 70px;
-  margin: 10px 0px -75px 740px;
+  margin: 10px 0px -75px 650px;
   padding: 20px 0px 20px 0;
 }
 
@@ -211,7 +211,7 @@ li a:hover{
 
 
 h1 {
-  margin: auto; 
+  margin: 10px 170px 0 0; 
 }
 
 h2{
