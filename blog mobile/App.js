@@ -1,4 +1,3 @@
-alert("Hello World");
 
 ScrollReveal().reveal('h1', {delay: 500, origin: 'top', distance: '40px'});
 ScrollReveal().reveal('h5', {delay: 500, origin: 'top', distance: '40px'});
