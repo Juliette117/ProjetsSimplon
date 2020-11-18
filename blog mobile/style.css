@@ -18,12 +18,7 @@ h1 {
   padding: 20px 0px 20px 0;
 }
 
-h2 {
-  color: #FAFAFA;
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 50px;
-}
+
 
 h5 {
   font-weight: bold;
@@ -61,6 +56,12 @@ footer {
   grid-area : footer;
 }
 
+#titre {
+  color: #FAFAFA;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
 
 .logo {
   border-radius: 50%;
