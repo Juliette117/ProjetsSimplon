@@ -41,10 +41,7 @@ h3 {
   margin-top: 42px;
 }
 
-h2:hover {
-  color: #ec2c7c;
-  transition: all 2s;
-}
+
 
 a {
   color: #ec2c7c;
@@ -123,7 +120,7 @@ table{
 
 .formations:hover {
   color: #ec2c7c;
-  transition: all 2s;
+  transition: all 5s;
 }
 
 .experiences {
@@ -134,7 +131,7 @@ table{
 
 .experiences:hover {
   color: #ec2c7c;
-  transition: all 2s;
+  transition: all 5s;
 }
 
 .compétences {
@@ -144,7 +141,7 @@ table{
 
 .compétences:hover {
   color: #ec2c7c;
-  transition: all 2s;
+  transition: all 5s;
 }
 
 body {
@@ -180,31 +177,96 @@ button:hover {
   background-color: #b3cde0;
 }
 
-@media screen and (max-width: 640px) {
-  h1,
-  h2,
-  h3,
-  #contenu,
-  #menu,
-  .icones,
-  .formations,
-  .experiences {
+
+
+
+@media screen and (max-width: 990px) {
+
+
+  #menu {    
     display: block;
     width: 100%;
-    margin: 0 0 10px 0;
+    height: 100%;
+    padding-bottom: 0;   
   }
 
-  .compétences {
+  #contenu {
     display: block;
-    text-align: center;
     width: 100%;
-    margin-left: 100px;
+    height:100%;
+    padding: 950px 50px 50px 0;
+    margin: 0 0 0 0;
+  }
+        
+
+    
+  h1{
+    font-size: 75px;
+    margin-top: -200px;
+    margin-left: 200px;
+  
+  }
+  
+  h2{
+   font-size: 50px;
+  
+  }
+  
+  h3 {
+    font-size: 35px;
   }
 
-  button {
-    display: none;
-  }
+  button{
+    margin-top: -600px;
 }
+
+
+  .icones {
+    font-size: 60px;
+    margin-top: -70px
+    
+}
+
+  .imageprofil {
+    width: 30%;
+  }
+
+  .coordonées {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 100px;    
+  }
+
+  .langues {
+    font-size: 30px;
+  }
+
+  .formations{
+    font-size: 35px;
+    
+    margin: 0 0 20px 10px;
+  }
+
+ 
+
+  .experiences{
+    font-size: 35px;
+    margin: 10px;
+    
+  }
+
+  .compétences{
+    font-size: 35px;
+    margin: 10px;
+  }
+
+  .date{
+    font-size: 30px;
+  }
+
+
+}
+
 
 @keyframes slide {
   from {
