@@ -210,6 +210,9 @@ li a:hover{
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 990px) {  
 
+  body{
+    background-color:rgb(139, 124, 124);
+  }
 
 h1 {
   margin: 10px 170px 0 0; 
@@ -237,6 +240,14 @@ p {
   font-size: 30px;
 }
 
+article {
+  background-color:rgb(139, 124, 124);
+  grid-area : article;
+  padding-bottom: 517px;
+  padding-top: 175px;  
+  border-top: 3px solid rgb(63, 63, 114);
+}
+
 footer {
   background-color: black;
   color: rgb(63, 63, 114);
@@ -259,6 +270,16 @@ footer {
   width: 100%;
   
 }
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 100%;
+  margin-bottom: -20px;
+}
+
+
 
 
 
