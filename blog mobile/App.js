@@ -1,5 +1,5 @@
 
-ScrollReveal().reveal('h1', {delay: 100, origin: 'top', distance: '40px', scale: 2});
+ScrollReveal().reveal('h1', {delay: 100, distance: '40px', scale: 1});
 ScrollReveal().reveal('h5', {delay: 900, origin: 'top', distance: '40px'});
 ScrollReveal().reveal('.card', {delay: 1200, origin: 'top', distance: '40px'});
 ScrollReveal().reveal('.card-text', {delay: 1200, origin: 'top', distance: '40px'});
