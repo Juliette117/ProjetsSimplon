@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+body {
+  background-color: white;
+  color: black;
+  margin-top: -40px;
+  margin-left: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "Alice", serif;
+}
+
+.dark {
+  background-color: black;
+  color: #EEEEEE;
+}
+
+.dark #menu {
+  background-color: #292929;
+  
+}
+
+.dark #contenu {
+  background-color: #292929;
+}
+
+
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-left: -40px;
+  color: #fafafa;
+}
+
+h2 {
+  font-size: 27px;
+  text-align: center;
+  margin-top: 130px;
+  
+  
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 170px;
+  margin-bottom: -10px;
+  color: #fafafa;
+}
+
+
+
+a {
+  
+  color: #fafafa;
+  margin-top: 200px;
+  font-size: 40px;
+  word-spacing: 10px;
+  margin-left: 40px;
+}
+
+ul{
+  list-style: none;
+  margin-left: -50px;
+  color: #fafafa;
+  margin-bottom: 50px ;
+
+}
+
+button {
+  position: absolute;
+  bottom: -620px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fafafa;
+  border: 2px solid #376c96;
+  color: #292929;
+}
+
+.dark button {
+  content: "light";
+  background-color: #fafafa;
+  color: black;
+  border: 1px solid #fafafa;
+}
+
+.dark button:hover {
+  background-color: black;
+  color: #fafafa;
+}
+
+
+#menu {
+  list-style: none;
+  float: left;
+  padding-bottom: 700px;
+  padding-left: 50px;
+  width: 230px;
+  font-size: 17px;
+  background-color: #376c96;
+  margin-top: -10px;
+}
+
+#contenu {
+  padding-left: 70px;
+  font-size: 22.7px;
+  background-color: #fafafa;
+  margin-left: 290px;
+  padding-top: 345px;
+  margin-top: 50px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.imageprofil {
+  border-radius: 10%;
+  width: 200px;
+  margin-top: 70px;
+  margin-left: -10px;
+  animation-duration: 3s;
+  animation-name: slide;
+}
+
+.coordonées {
+  text-align: center;
+  line-height: 40px;
+  margin-left: -30px;
+  color: #fafafa;
+}
+
+.icones {
+  height: 170px;
+  margin-top: 70px;
+  font-size: 30px;
+  word-spacing: 10px;
+  margin-left: 10px;
+}
+
+.langues {
+  text-align: center;
+  font-size: 17px;
+  line-height: 30px;
+  margin-left: -50px;
+  margin-top: -100px;
+}
+
+.speach{
+  margin-top:-100px
+}
+
+.formexp {
+  text-align: justify;
+  line-height: 50px;
+  margin-left: 70px;
+  margin-top: -20px;
+}
+
+
+.formexp:hover {
+  color: #376c96;
+  transition: all 5s;
+}
+
+.date{
+  margin-left: 130px ;
+}
+
+.competences {
+  text-align: center;
+  line-height: 50px;
+  margin-left:620px;
+}
+
+.competences:hover {
+  color: #376c96;
+  transition: all 5s;
+}
+
+.reseaux{
+  text-align: center;
+  
+  margin-bottom: 20px;
+}
+
+.sep{
+    border-bottom:4px solid black;
+    margin-right: 60px;
+}
+
+.interets{
+margin-right: 20px;
+color: #fafafa;
+font-size: 25px;
+word-spacing: 2px;
+line-height: 40px;
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+
+
+  #menu {    
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;   
+  }
+
+  #contenu {
+    display: block;
+    width: 100%;
+    height:100%;
+    padding: 1050px 50px 0px 20px;
+    margin: 0 0 0 0;
+  }
+        
+
+    
+  h1{
+    font-size: 60px;
+    margin-top: -200px;
+    margin-left: 200px;
+  
+  }
+  
+  h2{
+   font-size: 50px;
+   margin-left: 60px;
+   
+   
+  
+  }                                                                                                   
+  
+  h3 {
+    font-size: 35px;
+  }
+
+  button{
+    background-color: #376477;
+    margin-bottom: 1700px;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 12%;
+    height: 5%;
+
+}
+
+
+  a {
+    font-size: 90px;
+    margin-left: 340px;
+    margin-right: -250px;
+    
+    
+}
+
+  .imageprofil {
+    width: 25%;
+  }
+
+  .coordonées {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 100px;    
+  }
+
+  .langues {
+    font-size: 30px;
+  }
+
+
+  .formexp{
+    font-size: 35px;
+  }
+
+
+
+  .competences{
+    font-size: 35px;
+    margin-left: 340px;
+
+  }
+
+  .date{
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .reseaux{
+    font-size: 35px;
+  }
+
+  .sep{
+    margin-right: -10px;
+  }
+
+  .speach{
+    display: none;
+  }
+
+  .interets{
+    display: none;
+  }
+
+
+
+
+}
+
+@keyframes slide {
+  from {
+    margin-top: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 50;
+  }
+}
+
