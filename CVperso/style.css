@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
 
 body {
+  width: 100%;
   background-color: white;
   color: black;
   margin-top: -40px;
@@ -35,7 +36,6 @@ h1 {
 }
 
 h2 {
-  font-size: 27px;
   text-align: center;
   margin-top: 130px;
   
@@ -47,6 +47,10 @@ h3 {
   margin-top: 170px;
   margin-bottom: -10px;
   color: #fafafa;
+}
+
+p{
+  color:#fafafa;
 }
 
 
@@ -70,7 +74,7 @@ ul{
 
 button {
   position: absolute;
-  bottom: -620px;
+  bottom: -720px;
   right: 50px;
   width: 80px;
   height: 80px;
@@ -106,7 +110,7 @@ button:hover {
 #menu {
   list-style: none;
   float: left;
-  padding-bottom: 700px;
+  padding-bottom: 890px;
   padding-left: 50px;
   width: 230px;
   font-size: 17px;
@@ -122,7 +126,7 @@ button:hover {
   padding-top: 345px;
   margin-top: 50px;
   margin-right: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 260px;
   text-align: center;
 }
 
@@ -182,7 +186,7 @@ button:hover {
 .competences {
   text-align: center;
   line-height: 50px;
-  margin-left:620px;
+  margin-left:920px;
 }
 
 .competences:hover {
@@ -191,8 +195,7 @@ button:hover {
 }
 
 .reseaux{
-  text-align: center;
-  
+  text-align: center;  
   margin-bottom: 20px;
 }
 
@@ -202,11 +205,11 @@ button:hover {
 }
 
 .interets{
-margin-right: 20px;
-color: #fafafa;
-font-size: 25px;
-word-spacing: 2px;
-line-height: 40px;
+  margin-right: 20px;
+  color: #fafafa;
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom:70px;
 }
 
 
@@ -225,8 +228,8 @@ line-height: 40px;
   #contenu {
     display: block;
     width: 100%;
-    height:100%;
-    padding: 1050px 50px 0px 20px;
+    height: 100%;
+    padding: 770px 50px 0px 20px;
     margin: 0 0 0 0;
   }
         
@@ -242,9 +245,6 @@ line-height: 40px;
   h2{
    font-size: 50px;
    margin-left: 60px;
-   
-   
-  
   }                                                                                                   
   
   h3 {
@@ -252,8 +252,8 @@ line-height: 40px;
   }
 
   button{
-    background-color: #376477;
-    margin-bottom: 1700px;
+    background-color: #376c96;
+    margin-bottom: 1930px;
     font-size: 25px;
     border-radius: 50%;
     width: 12%;
@@ -261,15 +261,16 @@ line-height: 40px;
 
 }
 
-
   a {
     font-size: 90px;
     margin-left: 340px;
-    margin-right: -250px;
-    
-    
+    margin-right: -250px; 
 }
 
+  p{
+    display: none;
+  }
+  
   .imageprofil {
     width: 25%;
   }
