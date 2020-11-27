@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Type effect</title>
+    <link rel="stylesheet" href="./assets/stylesheet/css/type-effect.css">
+  </head>
+  <body>
+    <h2>Faire apparaitre le mot de votre choix lettre par lettre dans la balise 'h1' (voir code...)
+    <br>(voir type-effect.html)
+    </h2>
+    <h1 data-typewriter= "Blblblblblblblblblblblblblblbl"></h1>
+  <script>
+    //TODO
+       //TODO
+        //1 - Séléctionner l'éléments HTML 'bouton paramoteur' avec querySelector et le mettre dans une variable.
+        //2 - Séléctionner la liste ul 'multiaxe' avec querySelector et la mettre dans une variable.
+        //3 - Placer un 'micro' avec un addEventListener (click) sur l'élément HTML 'bouton paramoteur'
+        //4 - Dans le callback de l'addEventListener, faire disparaitre le liste 'multiaxe' à l'aide de ce code: multiaxe.style.display = 'none'; Tester cette instruction dans la console du navigateur.
+        //5 - Placer un 'debugger' dans le callback en cas de problème.
+
+    //1 - Je séléctionne l'éléments HTML 'Titre' avec querySelector et le mettre dans une variable.    
+      const titre = document.querySelector("h1");
+    //2 - Créer variable "txt" correspondant à la variable titre +
+      const txt = titre.getAttribute('data-typewriter');
+      let i 	= 0 ;
+      function showLetters()
+    {
+      let timeOut ; 
+       // J' incremente i et je compare a la taille du message.
+      //Si i ne depasse pas le nombre de caracteres dans le message
+      if(i < txt.length)
+	  {
+	    titre.innerHTML += `${txt[i]}` ;
+	    timeOut = setTimeout(showLetters,170)
+	    i++
+	  }
+
+   }
+    showLetters();
+
+  </script>
+  </body>
+</html>

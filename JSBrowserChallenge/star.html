@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>allo ciné star</title>
+  <link rel="stylesheet" href="./assets/stylesheet/css/star.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+  <div class="star">
+    <h1>ALLO CINE ! Un click sur une des étoiles permettra des la passer au jaunes ainsi que toutes les étoiles précédentes
+    <br>(voir star.html)
+    </h1>
+
+    <ul id="list-of-stars">
+      <li><i class="fas fa-star"></i></li>
+      <li><i class="fas fa-star"></i></li>
+      <li><i class="fas fa-star"></i></li>
+      <li><i class="fas fa-star"></i></li>
+      <li><i class="fas fa-star"></i></li>
+    </ul>
+  </div>
+  <div class="test"></div>
+  <script>
+    //TODO
+    //Sélectionner tous les "li"
+    const stars = document.querySelectorAll('#list-of-stars li');
+
+    //Application CSS par défault (les mettre en gris)
+    stars.forEach((star) => {
+      star.classList.add('star-uncheked');
+    });
+    //Cliquer sur une étoile et la jaunir
+    for(let index = 0; index < stars.length; index++){
+      stars[index].addEventListener('click', () => {
+    for(let a = 0; a <= index; a++){
+        stars[a].classList.remove('star-unchecked');
+        stars[a].classList.add('star-checked');
+      }
+      for(let b = index + 1; b < star.length; b++){
+        stars[b].classList.remove('star-checked');
+        stars[b].classList.add('star-unchecked');
+      }
+      });
+    }
+    //Jaunir celle qui sont avant
+
+    //Griser toutes les étoiles qui suivent celle qui est cliqué
+
+  </script>
+</body>
+</html>
