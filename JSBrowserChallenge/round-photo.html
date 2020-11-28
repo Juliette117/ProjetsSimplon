@@ -11,19 +11,21 @@
         <br> (voir round-photo.html)
       </p>
     </div>
-      <div id="photo1"><img src="./assets/images/round-photo/photo1.jpg" width="20%"></div>
+      <img id= "photo1" src="./assets/images/round-photo/photo1.jpg" width="20%"></img>
     <script>
         //TODO
 
+     
+        
+        
         const image = document.querySelector('#photo1');
+        image.addEventListener('mouseover',(event) => {
+  console.log(event);
+  image.classList.add('shadow');
+
         image.addEventListener('click',(event) => {
           console.log(event);
           image.classList.add('round-photo');
-        
-        
-        image.addEventListener('hover',(event) => {
-          console.log(event);
-          image.classList.add('shadow');
         });
       });
 
