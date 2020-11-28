@@ -33,19 +33,20 @@
     //Cliquer sur une étoile et la jaunir
     for(let index = 0; index < stars.length; index++){
       stars[index].addEventListener('click', () => {
+    //Jaunir celle qui sont avant
     for(let a = 0; a <= index; a++){
         stars[a].classList.remove('star-unchecked');
         stars[a].classList.add('star-checked');
       }
+    //Griser toutes les étoiles qui suivent celle qui est cliqué
       for(let b = index + 1; b < stars.length; b++){
         stars[b].classList.remove('star-checked');
         stars[b].classList.add('star-unchecked');
       }
       });
     }
-    //Jaunir celle qui sont avant
+  
 
-    //Griser toutes les étoiles qui suivent celle qui est cliqué
 
   </script>
 </body>
