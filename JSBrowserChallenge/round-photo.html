@@ -15,16 +15,17 @@
     <script>
         //TODO
 
-     
-        
-        
+        //Sélectionner l'id "photo1"
         const image = document.querySelector('#photo1');
+        //Créer evennnement au passage de la souris
         image.addEventListener('mouseover',(event) => {
-  console.log(event);
-  image.classList.add('shadow');
-
+        console.log(event);
+        //Appliquer la classe CSS "shadow"
+        image.classList.add('shadow');
+        //Créer evennnement au clic
         image.addEventListener('click',(event) => {
           console.log(event);
+        //Appliquer la classe CSS "round-photo"  
           image.classList.add('round-photo');
         });
       });

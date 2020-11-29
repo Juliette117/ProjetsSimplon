@@ -21,13 +21,16 @@
       //TODO
 
       window.onscroll = function () {
-        
+        //Appliquer une condition 
         if(document.documentElement.scrollTop > 70){
           document.getElementById("menu").style.background = "#292929";
+        //Fixer en haut de la page
           document.getElementById("menu").style.position = "fixed";
           document.getElementById("menu").style.top = "0";
+        //Attribuer 100% de la largeur du menu
           document.getElementById("menu").style.width = "100%";
         }
+        //Réinitialiser 
         else{
           document.getElementById("menu").style.background = "white";
         }

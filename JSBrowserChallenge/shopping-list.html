@@ -15,12 +15,27 @@
     </div>
     <form action="" id="formulaire" style="text-align: center;">
       <input type="text" placeholder="ex: poire">
-    <button id="bouton">Envoyer</button>
+    <input type="button" value="Envoyer" onclick="add()"></button>
     <button id="Supprime">Supprimer ma liste</button>
     </form>
-    <div id="maListeDeCourse">Liste : </div>
+    <div id="maListeDeCourse">Liste :</div>
+  
     <script>
       //TODO
+
+      // Initialiser l'index à la valeur 0
+      // Attribuer une fonction au bouton "Envoyer"
+      // Sélectionner l'input et lui attribuer une valeur
+      // Creer une liste contenant les valeurs donné à "input"
+      // Sélectionner l'id "maListeDeCourse" et l'affilier à la liste
+      // 
+      let i = 0;
+      function add() {   
+      const listItem = document.querySelector("input").value;
+	    const listed = '<ul>' + listItem + '</ul>';
+      document.getElementById("maListeDeCourse").innerHTML += listed;
+      };
+
     </script>
   </body>
 </html>
