@@ -31,6 +31,35 @@
         //3 - Placer un 'micro' avec un addEventListener (click) sur l'élément HTML 'bouton paramoteur'
         //4 - Dans le callback de l'addEventListener, faire disparaitre le liste 'multiaxe' à l'aide de ce code: multiaxe.style.display = 'none'; Tester cette instruction dans la console du navigateur.
         //5 - Placer un 'debugger' dans le callback en cas de problème.
+
+        //TODO
+    const btnParamoteur = document.querySelector('#paramoteur');
+    const btnMultiaxe = document.querySelector('#multiaxe');
+    const btnAll = document.querySelector("#all");
+
+    const paramoteur = document.querySelector('.paramoteur');
+    const multiaxe = document.querySelector('.multiaxe');
+    
+
+
+
+   btnParamoteur.addEventListener( "click",() => {
+   multiaxe.style.display = "none";
+   paramoteur.style.display = "";
+   }); 
+   btnMultiaxe.addEventListener( "click",  () => {
+   paramoteur.style.display = "none";
+   multiaxe.style.display = "";
+   
+   });   
+
+   btnAll.addEventListener( "click",  () => {
+    paramoteur.style.display = "";
+   multiaxe.style.display = "";
+   });   
+
+
+
       </script>
   </body>
 </html>
