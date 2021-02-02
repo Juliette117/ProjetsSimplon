@@ -2,9 +2,9 @@
 
 
 
-const colorInput = document.querySelector('#choose');
+const colorInput = document.getElementById('choose');
 
-colorInput.addEventListener('change', function () {
+colorInput.addEventListener('input', () => {
     document.querySelector('body').style.backgroundColor = colorInput.value;
 });
 
