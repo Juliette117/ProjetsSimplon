@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Créer votre compte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body class="formPage">
+    <main>
+      <a href="consignes.html">consignes</a>
+      <h1>Nouveau compte</h1>
+      <form>
+        <div class="input-group">
+          <label for="username">Nom d'utilisateur</label>
+          <input id="username" name="username" required="" />
+          <div class="error-username"></div>
+        </div>
+        <div class="input-group">
+          <label for="password">Mot de passe</label>
+          <input id="password" name="password" type="password" required />
+          <div class="error-password"></div>
+          <div class="password-strength"></div>
+        </div>
+        <div class="input-group">
+          <label for="confirm-password">Confirmation du mot de passe</label>
+          <input id="confirm-password" name="confirm-password" type="password" required/>
+          <div class="error-comfirm-password"></div>
+        </div>
+        <button type="submit">Créer mon compte</button>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html> 
+
