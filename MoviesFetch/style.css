@@ -1,0 +1,75 @@
+
+.imgContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
+}
+
+li img {
+    height: 20rem;
+    width: 15rem;
+    margin-top: 50px;
+}
+
+#weather {
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+
+p,
+#weatherIcon {
+    display: inline;
+    padding-right: 1rem;
+}
+
+#weatherIcon {
+    width: 36px;
+    height: 36px;
+}
+
+
+
+
+
+#movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    margin: auto;
+} 
+
+
+
+
+
+
+
+
+                        /* FONCTIONNE */
+/* form{
+    font-family: "Bungee shade", cursive;
+
+}
+.container{
+    display:flex;
+    justify-content:space-around;
+  
+  }
+  .container>div{
+    flex-grow:1;
+    padding:20px;
+    margin:20px;
+  } 
+                        /* FONCTIONNE */
