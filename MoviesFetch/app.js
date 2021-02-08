@@ -4,7 +4,7 @@ const button = document.querySelector('#movieButton');
 const movieDefault = "batman";
 
 const getMovie = (movieTitle) => {
-const url = `http://www.omdbapi.com/?s=${movieTitle}&apikey=87ec7d51`;
+const url = `https://www.omdbapi.com/?s=${movieTitle}&apikey=87ec7d51`;
 fetch(url)
     .then(response => response.json())
     .then((data) => {
