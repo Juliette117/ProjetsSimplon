@@ -1,7 +1,7 @@
 const moviesList = document.querySelector('#movies');
 const keyword = document.querySelector('#keyword');
 const button = document.querySelector('#movieButton');
-const movieDefault = "batman";
+const movieDefault = "Star Wars";
 
 const getMovie = (movieTitle) => {
 const url = `https://www.omdbapi.com/?s=${movieTitle}&apikey=87ec7d51`;
