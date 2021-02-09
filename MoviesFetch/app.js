@@ -31,8 +31,21 @@ button.addEventListener('click', (event) => {
     event.preventDefault("");
     moviesList.innerHTML = "";
     console.log(keyword.value);
-   
     getMovie(keyword.value);
+
+    button.addEventListener('keyup', (event) => {  // j'écoute mon INPUT au keyup avec comme paramètre un event
+    if(event.keyCode == 13){    // si l'event est la touche "entrée"
+        getMovie(button.value);    // alors j'exécute ma fonction
+    }
+ })
+
+ function pressEnter(event) {
+    const code=event.which || event.keyCode; //Selon le navigateur c'est which ou keyCode
+    if (code==13) { //le code de la touche Enter
+        document.getElementById("form").submit();
+    }
+}
+
 });
 
 
