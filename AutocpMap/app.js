@@ -157,7 +157,7 @@
 
 
 const keyword = document.querySelector("#keyword")
-const btnOk = document.querySelector("#button");
+const btn = document.querySelector("#button");
 const city = document.querySelector('#monUl');
 const lat = 35.689487;
 const lng = 139.691706;
@@ -177,7 +177,7 @@ keyword.addEventListener('keyup', (event) => {
             body: JSON.stringify({ query: keyword.value })
         })
         .then(response => response.json())
-        .then((data) => {
+        .then((data) => {   //on transforme en fichier data 
             console.log(data)
             city.innerHTML = '',
                 data.hits.forEach(element => {
@@ -218,13 +218,13 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 var marker = L.marker([lat, lng]).addTo(map);
 
 
-btnOk.addEventListener('click', (event) => {
+btn.addEventListener('click', (event) => {
     event.preventDefault();
 
 
     // console.log(keyword.value);
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${keyword.value}&units=metric&APPID=1d63deac7dbf7321ce6f1a2acea789d9`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${keyword.value}&units=metric&APPID=1d63deac7dbf7321ce6f1a2acea789d9`;
     fetch(url)
         .then(res => res.json())
         // .then(res => console.log(res))
