@@ -1,7 +1,6 @@
-
 const keyword = document.querySelector("#keyword")
 const btn = document.querySelector("#button");
-const city = document.querySelector('#monUl');
+const city = document.querySelector('#ul');
 const lat = 35.689487;
 const lng = 139.691706;
 const map = L.map('mapid').setView([lat, lng], 10);
