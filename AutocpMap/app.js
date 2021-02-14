@@ -42,9 +42,29 @@ const element = elemList[i]
       console.log(elemList[i])
      })
    };
+ city.addEventListener('click', (event) => {
+    event.preventDefault();
+
+
+    // console.log(keyword.value);
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${keyword.value}&units=metric&APPID=1d63deac7dbf7321ce6f1a2acea789d9`;
+    fetch(url)
+        .then(response => response.json())
+        // .then(response => console.log(res))
+        .then((data) => {
+            console.log(data.coord)
+            map.setView([data.coord.lat, data.coord.lon], 10);
+            var marker = L.marker([data.coord.lat, data.coord.lon]).addTo(map);
+            //map = L.map('mapid').setView([data.coord.lat, data.coord.lon], 10);
+            //refresh
+            //sinon supprimer 
+
+        })
+
+    })
 
 });
-
 
 
 //mapGéo
@@ -60,25 +80,5 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 var marker = L.marker([lat, lng]).addTo(map);
 
 
-btn.addEventListener('click', (event) => {
-    event.preventDefault();
 
-
-    // console.log(keyword.value);
-
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${keyword.value}&units=metric&APPID=1d63deac7dbf7321ce6f1a2acea789d9`;
-    fetch(url)
-        .then(res => res.json())
-        // .then(res => console.log(res))
-        .then((data) => {
-            console.log(data.coord)
-            map.setView([data.coord.lat, data.coord.lon], 10);
-            var marker = L.marker([data.coord.lat, data.coord.lon]).addTo(map);
-            //map = L.map('mapid').setView([data.coord.lat, data.coord.lon], 10);
-            //refresh
-            //sinon supprimer 
-
-        })
-
-})
 
