@@ -8,7 +8,7 @@ const map = L.map('mapid').setView([lat, lng], 10);
 
 
 
-//auto compliton du champ
+//Auto-complétion
 keyword.addEventListener('keyup', (event) => {
     event.preventDefault();
     console.log(keyword.value);
@@ -44,10 +44,10 @@ const element = elemList[i]
    };
  city.addEventListener('click', (event) => {
     event.preventDefault();
-
-
     // console.log(keyword.value);
 
+
+//MAP
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${keyword.value}&units=metric&APPID=1d63deac7dbf7321ce6f1a2acea789d9`;
     fetch(url)
         .then(response => response.json())
@@ -56,18 +56,22 @@ const element = elemList[i]
             console.log(data.coord)
             map.setView([data.coord.lat, data.coord.lon], 10);
             var marker = L.marker([data.coord.lat, data.coord.lon]).addTo(map);
-            //map = L.map('mapid').setView([data.coord.lat, data.coord.lon], 10);
-            //refresh
-            //sinon supprimer 
 
         })
 
     })
 
+// let removemap;
+ 
+//  coordmap = (at, lng) => {
+//     if (removemap !== undefined) {
+//       removemap.remove();
+//     }
+//  }
+
 });
 
 
-//mapGéo
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoianVsaWV0dGUxMTciLCJhIjoiY2trejd6djc2MGdzZjJvcW9sczl6eWVxNyJ9.RVsEwU9XFHuaRnwymBYbjA', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -78,7 +82,3 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(map);
 //Marqueur
 var marker = L.marker([lat, lng]).addTo(map);
-
-
-
-
