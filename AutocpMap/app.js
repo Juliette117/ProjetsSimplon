@@ -53,21 +53,23 @@ const element = elemList[i]
         .then(response => response.json())
         // .then(response => console.log(res))
         .then((data) => {
+            city.innerHTML = "";
             console.log(data.coord)
             map.setView([data.coord.lat, data.coord.lon], 10);
             var marker = L.marker([data.coord.lat, data.coord.lon]).addTo(map);
+            
 
         })
 
     })
 
-// let removemap;
+let removemap;
  
-//  coordmap = (at, lng) => {
-//     if (removemap !== undefined) {
-//       removemap.remove();
-//     }
-//  }
+ coordmap = (lat, lng) => {
+    if (removemap !== undefined) {
+      removemap.remove();
+    }
+ }
 
 });
 
