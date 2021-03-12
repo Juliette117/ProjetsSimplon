@@ -1,10 +1,10 @@
 <?php
 
-// création de la session
-// session_start();
-// $id_session = session_id();
+//création de la session
+session_start();
+$id_session = session_id();
 
-// connexion à la bdd
+// //connexion à la bdd
 // try {
     // $host = '';
     // $user = '';
@@ -15,13 +15,7 @@
 
 // } catch (PDOException $err) {
     // die('Erreur de connexion: ' . $err->getMessage());
-// }
-
-
-
-// création de la session
-session_start();
-$id_session = session_id();
+//}
 
 // connexion à la bdd
 try {
@@ -31,3 +25,5 @@ try {
 } catch (PDOException $err) {
     die('Erreur de connexion: ' . $err->getMessage());
 }
+
+?>
