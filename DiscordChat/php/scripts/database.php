@@ -15,7 +15,7 @@ $id_session = session_id();
 
 // } catch (PDOException $err) {
     // die('Erreur de connexion: ' . $err->getMessage());
-//}
+//    }
 
 // connexion à la bdd
 try {
@@ -24,6 +24,7 @@ try {
 
 } catch (PDOException $err) {
     die('Erreur de connexion: ' . $err->getMessage());
-}
+   }
+
 
 ?>
