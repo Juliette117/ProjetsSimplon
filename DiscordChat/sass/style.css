@@ -90,9 +90,9 @@ body {
         padding: 1rem 1rem;
         margin: 1rem; 
       }
-        .mainWrap__header__content input:focus {
-          width: 26rem; 
-        }
+      .mainWrap__header__content input:focus {
+        width: 26rem; 
+      }
       .mainWrap__header__content img {
         height: 2rem;
         width: 2rem;
