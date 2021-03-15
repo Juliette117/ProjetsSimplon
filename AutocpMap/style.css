@@ -4,16 +4,9 @@ body{
 }
 
 #mapid {
-    height: 300px;
+    height: 340px;
 }
 
-#place{   
-    position: relative;
-    Vertical-align: top;
-    width: 640px;
-    margin-left: 570px;
-    list-style: none;
-}
 
 #keyword{
     position: relative;
