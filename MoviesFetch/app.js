@@ -1,10 +1,10 @@
 const moviesList = document.querySelector('#movies');
 const keyword = document.querySelector('#keyword');
 const button = document.querySelector('#movieButton');
-const movieDefault = "Star Wars";
+const movieDefault = "star wars";
 
 const getMovie = (movieTitle) => {
-const url = `https://www.omdbapi.com/?s=${movieTitle}&apikey=87ec7d51`;
+const url = `http://www.omdbapi.com/?s=${movieTitle}&apikey=87ec7d51`;
 fetch(url)
     .then(response => response.json())
     .then((data) => {
@@ -31,21 +31,8 @@ button.addEventListener('click', (event) => {
     event.preventDefault("");
     moviesList.innerHTML = "";
     console.log(keyword.value);
+   
     getMovie(keyword.value);
-
-    button.addEventListener('keyup', (event) => {  // j'écoute mon INPUT au keyup avec comme paramètre un event
-    if(event.keyCode == 13){    // si l'event est la touche "entrée"
-        getMovie(button.value);    // alors j'exécute ma fonction
-    }
- })
-
- function pressEnter(event) {
-    const code=event.which || event.keyCode; //Selon le navigateur c'est which ou keyCode
-    if (code==13) { //le code de la touche Enter
-        document.getElementById("form").submit();
-    }
-}
-
 });
 
 
